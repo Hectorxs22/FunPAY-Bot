@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           d='DATE '`date '+%Y-%m-%d %H:%M:%S'`
-          echo $d > TRXBot
+          echo $d > FunPAYBot
           
       - name: Commit changes
         run: | 
@@ -29,16 +29,8 @@ jobs:
           git config --local user.name "${{ github.repository_owner }}"
           git add -A
           
-          arr[0]="TRON Bot"
-          arr[1]="TRON Bot"
-          arr[2]="TRON Bot"
-          arr[3]="TRON Bot"
-          arr[4]="TRON Bot"
-          arr[5]="TRON Bot"
-          arr[6]="TRON Bot"
-          arr[7]="TRON Bot"
-          arr[8]="TRON Bot"
-          arr[9]="TRON Bot"
+          arr[0]="FunPAY Bot"
+          arr[1]="FunPAY Bot"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
