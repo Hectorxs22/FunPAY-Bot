@@ -31,7 +31,6 @@ def check_param(param_name: str, section: SectionProxy, valid_values: list[str |
 
     value = section[param_name].strip()
 
-    # Если значение пустое ("", оно не может быть None)
     if not value:
         if valid_values and None in valid_values:
             return value
