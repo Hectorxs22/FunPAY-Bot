@@ -24,7 +24,7 @@ PRIVATE_CHAT_ID_RE = re.compile(r"users-\d+-\d+$")
 
 class Account:
     """
-    Класс для управления аккаунтом FunPay.
+    A class for managing a FunPay account.
 
     :param golden_key: токен (golden_key) аккаунта.
     :type golden_key: :obj:`str`
